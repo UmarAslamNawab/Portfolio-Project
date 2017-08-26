@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Portfolio - Saylani Mass Training</title>
+<!--Firebase Link-->
+    <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBZtJZwTizKl_JV4TC3rd7VoLuEHoUns2A",
+    authDomain: "port-115df.firebaseapp.com",
+    databaseURL: "https://port-115df.firebaseio.com",
+    projectId: "port-115df",
+    storageBucket: "port-115df.appspot.com",
+    messagingSenderId: "1039122373521"
+  };
+  firebase.initializeApp(config);
+</script>
+
+
+
+     
+
+    <!--this add icon of Materialize Bootstrap-->
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- Custom CSS -->
+    <link href="css/stylish-portfolio.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- Navigation -->
+    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
+    <nav id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+            <li class="sidebar-brand">
+                <a href="#top" onclick=$( "#menu-close").click();>Portfolio</a>
+            </li>
+            <li>
+                <a href="#top" onclick=$( "#menu-close").click();>Home</a>
+            </li>
+            <li>
+                <a href="#about" onclick=$( "#menu-close").click();>About</a>
+            </li>
+            <li>
+                <a href="#services" onclick=$( "#menu-close").click();>Services</a>
+            </li>
+            <li>
+                <a href="#portfolio" onclick=$( "#menu-close").click();>Portfolio</a>
+            </li>
+            <li>
+                <a href="#contact" onclick=$( "#menu-close").click();>Contact</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Header -->
+    <header class="header" id="top">
+        <div class="text-vertical-center">
+           
+           <!--<h1>Start Bootstrap</h1>
+            -->
+            <h1>Saylani Mass Tranning Institute</h1>
+            <h3>A Institute Where You Can Change Your Future</h3>
+            <br>
+            <a href="#about" class="page-scroll btn btn-dark btn-lg">Find Out More</a>
+        </div>
+    </header>
+
+    <!-- About -->
+    <section id="about" class="about">
+        <div class="container text-center">
+            <h3 class="introOfSaylani">Saylani Mass Training & Job creation Program is DevBootcamp , which calls itself an “apprenticeship on steroids, ” is one of a new breed of computer programming  school that’s proliferating in San Francisco and other US tech hubs. These “hacker boot camps  ” promise to teach students how to write code in two or three months and help them get hired as web developers, with starting salaries between $500 – $1000, often within days or weeks of graduation. We’re focused on extreme employ ability.</h3><br>
+             <h2>You Can Find Out More at<a href="http://saylaniwelfare.com/mass-training-program/" target="_blank" class="linkofSMT"> Saylani Mass Training </a></h2>
+        </div>
+        <!-- /.container -->
+    </section>
+
+    <!-- Services -->
+    <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
+    <section id="services" class="services bg-primary text-white">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-lg-10 mx-auto">
+                    <h2>Our Services</h2>
+                    <hr class="small">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-cloud fa-stack-1x text-primary"></i>
+                            </span>
+                                <h4>
+                                    <strong>Web App Development</strong>
+                                </h4>
+                                <p id="WebDevelopment">Software development is the process of computer programming...</p>
+                                <a href="javascript:void(0);" onclick="expandWebDevelopment();" class="btn btn-light">Learn More</a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-compass fa-stack-1x text-primary"></i>
+                            </span>
+                                <h4>
+                                    <strong>CCNA</strong>
+                                </h4>
+                                <p id="CCNA">CCNA (Cisco Certified Network Associate) is an information technology (IT)...</p><br>                     
+                                <a href="javascript:void(0);" onclick="expandCCNA();" class="btn btn-light">Learn More</a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-flask fa-stack-1x text-primary"></i>
+                            </span>
+                                <h4>
+                                    <strong>Graphic Designning</strong>
+                                </h4>
+                                <p id="GraphicDesinning">Graphic design is the process of visual communication and problem-solving ...</p><br>
+                                <a href="javascript:void(0);" onclick="expandGraphicDesignning();" class="btn btn-light">Learn More</a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-shield fa-stack-1x text-primary"></i>
+                            </span>
+                                <h4>
+                                    <strong>Artificial Intelligence</strong>
+                                </h4>
+                                <p id="ArtificialIntelligence">The scope of AI is disputed: as machines become increasingly capable...</p>
+                                <a href="javascript:void(0);" onclick="expandArtificialIntelligence();" class="btn btn-light">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.row (nested) -->
+                </div>
+                <!-- /.col-lg-10 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+
+    <!-- Callout -->
+    <aside class="callout">
+        <div class="text-vertical-center">
+            <h1>Saylani Mass Tranning Offers:</h1>
+        </div>
+    </aside>
+
+    <!-- Portfolio -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 mx-auto text-center">
+                    <h2>Our Work</h2>
+                    <hr class="small">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="portfolio-item">
+                                <aside class="ourWorkout1"><div class="text-vertical-center"><h2><button type="button" class="btn btn-warning"><a href="https://www.facebook.com/groups/SaylaniSG/" target="_blank" class="btn-href-ourwork">Web Development</a></button></h2></div></aside>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="portfolio-item">
+                                <aside class="ourWorkout2"><div class="text-vertical-center"><h2><button type="button" class="btn btn-warning"><a href="https://www.facebook.com/groups/deep.learning.edu/?sw_fnr_id=2962327461&fnr_t=0" target="_blank" class="btn-href-ourwork">Artificail Intelligence</a></button></h2></div></aside>                                
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="portfolio-item">
+                                <aside class="ourWorkout3"><div class="text-vertical-center"><h2><button type="button" class="btn btn-warning"><a href="https://www.facebook.com/groups/SaylaniGD/" target="_blank" class="btn-href-ourwork">Graphic Designning</a></h2></button></div></aside> 
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="portfolio-item">
+                                 <aside class="ourWorkout4"><div class="text-vertical-center"><h2><button type="button" class="btn btn-warning"><a href="https://www.facebook.com/SaylaniMassTraining/" target="_blank" class="btn-href-ourwork">CCNA(Router)<a></h2></button></div></aside> 
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.row (nested) -->
+                    <button id="contact" class="btn btn-dark">Please Fill The Form</button>
+                </div>
+                <!-- /.col-lg-10 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+    <!--Form-->  
+      <form>
+  <div class="row">
+    <div class="col">
+        <i class="material-icons prefix">account_circle</i>
+        <label for="firstName">First Name:</label>
+      <input id="firstName" type="text" class="form-control" placeholder="First name">
+    </div>
+    <div class="col">
+        <i class="material-icons">account_box</i>
+        <label for="lastName">Last Name:</label>
+      <input id="lastName" type="text" class="form-control" placeholder="Last name">
+    </div>
+  </div>
+  <div class="form-group">
+      <i class="material-icons">email</i>
+    <label for="exampleFormControlInput1">Email address:</label>
+    <input id="email" type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+  </div>
+  <div class="form-group">
+      <i class="material-icons">message</i>
+    <label for="exampleFormControlTextarea1">If You Have Any Querries Write There,<br>Message:</label>
+    <textarea id="message" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+  </div>
+
+
+
+    <!-- Call to Action -->
+
+    <!-- we close this form tag after submit button because when click on submit  button it clears the field-->
+    <!--but we dont close it after reset button because if we close it there then it will goes to top intead of being at there-->
+
+    <aside class="call-to-action bg-primary text-white">
+        <div class="container text-center">
+            <h3>After Completing The Form Kindly:</h3>
+            <button onclick="userInfo()" class="btn btn-lg btn-light">Submit</button></form>
+            <button onclick="clearfield()" class="btn btn-lg btn-dark">Reset</button>
+        </div>
+    </aside>
+          <!--</form>  -->
+    <!-- Map -->
+    <section class="map">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3619.46066659968!2d67.06502851528755!3d24.882263584043624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33eebb56aaaab%3A0x27ab04809ef5020a!2sSaylani+Welfare+Head+Office.!5e0!3m2!1sen!2s!4v1503653475219" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </section>
+
+    
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 mx-auto text-center">
+                    <h4><strong>Exclusively Made By: </strong>
+                    </h4>
+                    <h3>Umar Uni Nawab</h3>
+                    <img src="img/mine.jpg" class="myImage" alt="myImage" height="40" width="40" border="0" ></img>
+                    <ul class="list-unstyled">
+                        <li><i class="fa fa-phone fa-fw"></i> (+92)333-3660070</li>
+                        <li><i class="fa fa-envelope-o fa-fw"></i> <a href="mailto:umar_uni321@outlook.com">umar_uni321@outlook.com</a>
+                        </li>
+                    </ul>
+                    <br>
+                    <ul class="list-inline">
+                        <li class="list-inline-item">
+                            <a href="https://www.facebook.com/umar.aslam.798" target="_blank"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://twitter.com/UmarUniNawab1" target="_blank"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://github.com/UmarUniNawab" target="_blank"><i class="fa fa-github fa-fw fa-3x"></i></a>
+                        </li>
+                    </ul>
+                    <hr class="small">
+                    <p class="text-muted">Copyright &copy; Saylani Mass Tranning</p>
+                </div>
+            </div>
+        </div>
+        <a id="to-top" href="#top" class="btn btn-dark btn-lg page-scroll"><i class="fa fa-chevron-up fa-fw fa-1x"></i></a>
+    </footer>
+
+      <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <!--<script src="vendor/popper/popper.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>-->
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/stylish-portfolio.js"></script>
+     
+    <!--app.js attached-->
+    <script src="app.js"></script>
+
+    
+
+</body>
+
+</html>
